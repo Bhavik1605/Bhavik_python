@@ -1,7 +1,8 @@
+	//swap number without third variable
+
 #include<stdio.h>
 main()
 {
-	//swap number without third variable
 	int a,b;
 	printf("Enter the value of a : ");
 	scanf("%d",&a);
