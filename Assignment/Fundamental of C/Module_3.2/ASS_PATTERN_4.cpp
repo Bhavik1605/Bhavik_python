@@ -1,21 +1,33 @@
-/*pattern A
-          A B
-          A B C
-          A B C D
-          A B C D E
+/*pattern  *
+           * *
+           * * *
+           * * * *
+           * * * * *
+           * * * * * *
+           * * * * *
+           * * * *
+           * * * 
+           * *
+           *
 */
 #include<stdio.h>
 main()
 {
-	int row,col;
-	char alp='A';
-	for(row=0;row<=4;row++)
+	int i,j;
+	for(i=1;i<=6;i++)
 	{
-		for(col=0;col<=row;col++)
+		for(j=1;j<=i;j++)
 		{
-			printf("%c ",alp+col);
-			
+			printf("* ");
 		}
-		printf("\n");
+		  printf("\n");
+	}
+	for(i=5;i>=1;i--)
+	{
+		for(j=1;j<=i;j++)
+		{
+			printf("* ");
+		}
+		printf(" \n");
 	}
 }
