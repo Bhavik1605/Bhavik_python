@@ -1,16 +1,14 @@
-
-//Program for print and sum of first 10 natural number
+//SUM OF NATURAL NUMBER AND DISPLAY n NUMBER OF NATURAL NUMBER
 #include<stdio.h>
 main()
 {
-	int i,sum=0;
+	int i,a,sum=0;
+	printf("Enter value for natural number : ");
+	scanf("%d",&a);
 	
-	printf("First 10 Natural Number is : ");
-	
-	for(i=1;i<=10;i++)
-	{
+	for(i=1;i<=a;i++){
 		printf("%d ",i);
-		sum=sum+i;
+		sum = sum+i;
 	}
-	printf("\nTotal Sum of First 10 Natural Number = %d",sum);
+	printf("\nTotal sum of first %d natural numbers is : %d",a,sum);
 }

@@ -1,14 +1,16 @@
-//display the n terms of odd natural numbers and their sum.
+/*pattern 1
+          12
+          123
+          1234
+*/
 #include<stdio.h>
 main()
 {
-	int a,i,sum=0;
-	printf("Enter Your number of terms : ");
-	scanf("%d",&a);
-	printf("YOUR ODD NUMBERS ARE = ");
-	for(i=1;i<=a;i++){
-		printf(" %d",(2*i)-1);
-		sum=sum+(2*i)-1;
+	int i,j;
+	for(i=1;i<=4;i++){
+		for(j=1;j<=i;j++){
+			printf("%d",j);
+		}
+		printf("\n");
 	}
-	printf("\nTOTAL SUM OF YOUR ODD NUMBERS = %d",sum);
 }

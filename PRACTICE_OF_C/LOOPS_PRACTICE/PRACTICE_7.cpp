@@ -1,15 +1,15 @@
-/*pattern 1
-          23
-          456
-          78910
+/*pattern *
+          **
+          ***
+          ****
 */
 #include<stdio.h>
 main()
 {
-	int i,j,a=1;
+	int i,j;
 	for(i=1;i<=4;i++){
 		for(j=1;j<=i;j++){
-			printf("%d ",a++);
+			printf("*");
 		}
 		printf("\n");
 	}

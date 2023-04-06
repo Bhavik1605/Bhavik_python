@@ -1,14 +1,15 @@
-//display the cube of the number up to an integer.
+//display the multiplier table vertically from 1 to n.
 #include<stdio.h>
 main()
 {
-	int i,a,c;
-	
-	printf("ENTER NUMBER OF TERMS : ");
+	int a,i,j;
+	printf("Enter the number for Table 1 to ");
 	scanf("%d",&a);
 	
 	for(i=1;i<=a;i++){
-		printf("Your %d Number and cube of the %d is = %d\n",i,i,i*i*i);
+		for(j=1;j<=10;j++){
+		       printf("%d * %d = %d\n",i,j,j*i);
+		}
+		printf("\n");
 	}
-	
 }

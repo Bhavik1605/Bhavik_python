@@ -1,15 +1,14 @@
-//display the multiplier table vertically from 1 to n.
+//display the n terms of odd natural numbers and their sum.
 #include<stdio.h>
 main()
 {
-	int a,i,j;
-	printf("Enter the number for Table 1 to ");
+	int a,i,sum=0;
+	printf("Enter Your number of terms : ");
 	scanf("%d",&a);
-	
+	printf("YOUR ODD NUMBERS ARE = ");
 	for(i=1;i<=a;i++){
-		for(j=1;j<=10;j++){
-		       printf("%d * %d = %d\n",i,j,j*i);
-		}
-		printf("\n");
+		printf(" %d",(2*i)-1);
+		sum=sum+(2*i)-1;
 	}
+	printf("\nTOTAL SUM OF YOUR ODD NUMBERS = %d",sum);
 }
