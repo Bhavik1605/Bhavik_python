@@ -2,8 +2,8 @@
 #include<stdio.h>
 int main()
 {
-	int a[2][2],i,j;
-	int b[2][2];
+	int a[2][2],i,j,k;
+	int b[2][2],re[2][2];
 	
 	//first array input by user
 	for(i=0;i<2;i++)
@@ -45,12 +45,24 @@ int main()
 	}
 	
 	printf("\n");
+	
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<2;j++)
+		{
+			re[i][j]=0;
+			for(k=0;k<2;k++)
+			{
+				re[i][j]+=a[i][k]*b[k][j];
+			}
+		}
+	}
 	printf("\n---------------Multiplication of two matrix---------------\n");
 	for(i=0;i<2;i++)
 	{
 		for(j=0;j<2;j++)
 		{
-			printf("%d  ",a[i][j]*b[i][j]);
+			printf("%d  ",re[i][j]);
 		}
 		printf("\n");
 	}
