@@ -4,6 +4,8 @@ int main()
 {
 	int a[5],,j;
 	int temp=0;
+	
+	//take 5 element of array
 	for(i=0;i<5;i++)
 	{
 		printf("\nEnter element number - %d : ",i+1);

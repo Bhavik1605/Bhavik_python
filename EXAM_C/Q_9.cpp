@@ -22,11 +22,11 @@ int main()
 	}
 	if(a==0)
 	{
-		printf("pelidrome");
+		printf("Your string is pelidrome");
 	}
 	else
 	{
-		printf("Not pelidrome");
+		printf("Your string is Not pelidrome");
 	}
 	
 	
