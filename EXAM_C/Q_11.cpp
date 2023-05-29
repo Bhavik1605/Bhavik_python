@@ -2,6 +2,7 @@
 
 #include<stdio.h>
 
+//function declaration & definition
 int sum(int *a,int *b)
 {
 	return (*a)+(*b);
