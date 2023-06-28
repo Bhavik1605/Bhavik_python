@@ -12,15 +12,18 @@ class student{
 		{
 			fflush(stdin);
 			
+			
 			cout<<"Enter Your Name : ";
 			getline(cin,name);
 			cout<<"Enter Your Roll Number : ";
 			cin>>roll;
-			cout<<"Enter Mark of Your Maths Subject : ";
+			cout<<endl<<"Enter Marks for Three Subject";
+			cout<<endl<<"------------------------------------"<<endl;
+			cout<<endl<<"Maths Subject : ";
 			cin>>sub[0];
-			cout<<"Enter Mark of Your Science Subject : ";
+			cout<<endl<<"Science Subject : ";
 			cin>>sub[1];
-			cout<<"Enter Mark of Your English Subject : ";
+			cout<<endl<<"English Subject : ";
 			cin>>sub[2];
 			
 			if(sub[0]  >100 || sub[1]  >100 || sub[2] >100)
@@ -52,14 +55,15 @@ class Per:public Total{
 	public:
 		void per()
 		{
-			pr = (total/3.0);
+			pr = total/3.00;
 		}
 		void show()
 		{
 			cout<<endl<<"---------------Your_Result-----------------"<<endl;
 			cout<<endl<<"Your Name is : "<<name;
 			cout<<endl<<"Your Roll Number is : "<<roll<<endl;
-			cout<<endl<<"Your Total Percentage is : "<<pr;
+			cout<<endl<<"-------------------------------------------"<<endl;
+			cout<<endl<<"Percentage of a Student : "<<pr;
 		}
 };
 
