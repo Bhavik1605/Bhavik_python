@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="php.backend">
+
+        <h1 style="text-align: center; color: blue;">My Feedback Form</h1>
+
+        <table cellpadding="0" cellspacing="0" align="center" border="1">
+            <tr>
+                <td><b><label for="name">Name </label></b></td>
+                <td><input type="text" id="name" placeholder="Username" required></td>
+            </tr>
+            <tr>
+                <td><b><label for="email">Email </label></b></td>
+                <td><input type="email" id="email" placeholder="username@xxx.xxx" required></td>
+            </tr>
+            <tr>
+                <td><b><label for="pass">Password </label></b></td>
+                <td><input type="password" id="pass" placeholder="Password" required></td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td colspan="2"><b>Please Check All The Emotions that Apply to You :</b>
+                    <ul>
+                        <li>Angry <input type="checkbox" name="" id=""></li>
+                        <li>Sad <input type="checkbox" name="" id=""></li>
+                        <li>Happy <input type="checkbox" name="" id=""></li>
+                        <li>Ambivalent <input type="checkbox" name="" id=""></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2"><b>How Satisfied Were You With Our Service?</b>
+                    <ul>
+                        <li>Very Satisfied <input type="radio" name="rev" id=""></li>
+                        <li>Satisfied <input type="radio" name="rev" id=""></li>
+                        <li>Didn't Care<input type="radio" name="rev" id=""></li>
+                        <li>Dissatisfied <input type="radio" name="rev" id=""></li>
+                        <li>Very Dissatisfied <input type="radio" name="rev" id=""></li>
+                    </ul>   
+                </td>
+            </tr>
+            <tr>
+                <td><b><label for="comment">Further Comments</label></b></td>
+                <td><textarea id="comment" cols="30" rows="5" placeholder="Comment"></textarea></td>
+            </tr>
+            <tr>
+                <td><b>Bio Photo</b></td>
+                <td><input type="file" required></td>
+            </tr>
+            <tr>
+                <td><b>Location</b></td>
+                <td>
+                    <select>
+                        <option value="none">Select Location</option>
+                    </select>
+                </td>
+            </tr>
+            <tr></tr>
+            <tr>
+                <td colspan="2"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+
+    </form>
+</body>
+</html>
