@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="php.backend">
+        <table align="center" cellspacing="0" border="1">
+            <tr>
+                <td colspan="2"><h2 align="center">Sign Up</h2></td>
+            </tr>
+            
+            <tr>
+                <td><b><label for="first">First Name </label></b></td>
+                <td><input type="text" required id="first" placeholder="First Name"></td>
+            </tr>
+            <tr>
+                <td><b><label for="last">Last Name  </label></b></td>
+                <td><input type="text" id="last" placeholder="Last Name"></td>
+            </tr>
+            <tr>
+                <td><b><label for="dob">Date of Birth  </label></b></td>
+                <td><input type="date" id="dob" required></td>
+            </tr>
+            <tr>
+                <td><b><label for="gender">Gender  </label></b></td>
+                <td>
+                    Male<input type="radio" name="gender">
+                    Female<input type="radio" name="gender">
+                    Other <input type="radio" name="gender">
+                </td>
+            </tr>
+            <tr>
+                <td><b><label for="email">Email  </label></b></td>
+                <td><input type="email" id="emali" required placeholder="xxx123@xxx.xxx"></td>
+            </tr>
+            <tr>
+                <td><b><label for="number">Mobile Number </label></b></td>
+                <td><input type="tel" id="number" required maxlength="10"></td>
+            </tr>
+            <tr>
+                <td><b><label for="country">Country </label></b></td>
+                <td>
+                    <select id="country" required>
+                        <option value="None">Country</option>
+                        <option value="India">India</option>
+                        <option value="USA">USA</option>
+                        <option value="UK">UK</option>
+                        <option value="Japan">Japan</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><b><label for="pass">Password  </label></b></td>
+                <td><input type="password" id="pass" required></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td><input type="checkbox" required>I Agree to the Terms of Use</td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center"><input type="reset" value="Reset"><input type="submit" value="Submit"></td>
+            </tr>
+        </table>
+
+
+    </form>
+</body>
+</html>

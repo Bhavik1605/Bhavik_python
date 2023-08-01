@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .row {
+            display: flex;
+        }
+
+        .just {
+            justify-content: space-between;
+        }
+
+        .col-45 {
+            width: 45%;
+        }
+
+        .container {
+            width: 900px;
+            margin: 0 auto;
+        }
+        form{
+            background-color: lightskyblue;
+            border: black solid 3px;
+        }
+        label{
+            font-weight: bold;
+            color: darkblue;
+        }
+        input,select{
+            border: 2px solid darkblue;
+        }
+        form h6 {
+            color: red;
+            font-size: 15px;
+        }
+        .one, .second, .three, .four{
+            padding: 20px 0 0 0;
+        }
+        .four p{
+            color: darkblue;
+            font-size: 15px;
+            font-weight: bold;
+            margin: -20px 0 20px 0;
+        }
+        .button{
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .button input{
+            color: white;
+            font-size: 15px;
+            background-color: blue;
+            margin: 0 10px;
+            padding: 3px 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section>
+        <div class="container">
+            <form action="#">
+                <div class="one">
+                    <h6>User Particulars</h6>
+                    <table align="center">
+                        <tr>
+                            <td style="text-align: right;"><label for="first">Login ID </label></td>
+                            <td><input type="text" required id="first"></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right;"><label for="pass">Password </label></td>
+                            <td><input type="password" id="pass" required></td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: right;"><label for="pass">Confirm Password </label></td>
+                            <td><input type="password" id="pass" required></td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="second">
+                    <h6>Personal Particulars</h6>
+                    <div class="row just">
+                        <div class="col-45">
+                            <table align="right">
+                                <tr>
+                                    <td style="text-align: right;"><label for="salu">Salutation </label></td>
+                                    <td>
+                                        <select id="salu" required>
+                                            <option value="None">Select</option>
+                                            <option value="any">Any Values</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;"><label for="middle">Middle Name </label></td>
+                                    <td><input type="text" id="middle"></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="resi">Residental Status </label></td>
+                                    <td>
+                                        <select id="resi" required>
+                                            <option value="None">Select</option>
+                                            <option value="any">Any Values</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;"><label for="email">Email </label></td>
+                                    <td><input type="email" id="emali" required></td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-45">
+                            <table align="left">
+                                <tr>
+                                    <td style="text-align: right;"><label for="first">First Name </label></td>
+                                    <td><input type="text" id="first"></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;"><label for="last">Last Name </label></td>
+                                    <td><input type="text" id="last"></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;"><label for="country">Contry </label></td>
+                                    <td>
+                                        <select id="country" required>
+                                            <option value="None">Select</option>
+                                            <option value="india">India</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><label for="number">Mobile Number </label></td>
+                                    <td><input type="tel" id="number" required maxlength="10"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="three">
+                    <h6>Account Particulars</h6>
+                    <div class="row just">
+                        <div class="col-45">
+                            <table align="right">
+                                <tr>
+                                    <td style="text-align: right;"><label for="acc">
+                                            <p style="width: 90%;">15 Digit Account No</p>
+                                        </label></td>
+                                    <td><input type="tel" id="acc" required maxlength="15"></td>
+                                </tr>
+                                <tr>
+                                    <td style="text-align: right;"><label for="fund">Fund Transfer </label></td>
+                                    <td>
+                                        <select id="fund" required>
+                                            <option value="None">Select</option>
+                                            <option value="sbi">SBI</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div class="col-45">
+                            <table align="left" style="padding: 22px 0 0 30px;">
+                                <tr>
+                                    <td style="text-align: right;"><label for="nick">Nick Name </label></td>
+                                    <td><input type="text" id="nick"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="four">
+                    <h6>Declaration</h6>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa quis quae odio aliquam impedit
+                        voluptatibus earum similique, illo provident saepe. Ratione omnis, ipsum odit, hic laborum quia,
+                        illo aspernatur provident amet voluptates optio velit atque cumque in quod dolorum placeat unde
+                        exercitationem harum dignissimos nihil aperiam veritatis recusandae. Minus, reprehenderit Lorem
+                        ipsum dolor sit, amet consectetur adipisicing elit. Laborum sapiente facilis totam
+                        exercitationem, fugiat sit eveniet accusantium aspernatur. Deserunt blanditiis molestias totam
+                        ipsam expedita esse dolores quod accusamus adipisci, necessitatibus tempora dignissimos
+                        perferendis doloribus sint possimus repellendus aperiam assumenda similique repellat quam
+                        quisquam atque. Mollitia corporis officia neque veritatis fugit</p>
+                </div>
+                <div class="button">
+                    <input type="submit" value="Submit"><input type="reset" value="Reset">
+                </div>
+            </form>
+        </div>
+    </section>
+
+</body>
+
+</html>
