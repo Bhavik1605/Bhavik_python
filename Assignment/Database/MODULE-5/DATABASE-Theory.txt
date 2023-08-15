@@ -1,0 +1,73 @@
+1. What do you understand By Database ?
+-->A database is an organized collection of structured information, or data, typically stored electronically in a computer system.
+
+-------------------------------------------------------------------------------------------
+2. What is Normalization? 
+-->Normalization is a database design technique that reduces data redundancy and eliminates undesirable characteristics like Insertion, Update and Deletion Anomalies. 
+
+-------------------------------------------------------------------------------------------
+3.What is Difference between DBMS and RDBMS?
+-->#DBMS :-
+	- DBMS applications store data as file.
+	- Normalization is not present in DBMS.
+	- DBMS does not apply any security with regards to data manipulation.
+	- DBMS uses file system to store data, so there will be no relation between the 	  	  tables.
+	- DBMS is meant to be for small organization and deal with small data. it supports 	  	  single user.
+	- Examples of DBMS are file systems, xml etc.
+
+   #RDBMS :-
+	- RDBMS applications store data in a tabular form.
+	- Normalization is present in RDBMS.
+	- RDBMS defines the integrity constraint for the purpose of ACID (Atomocity, 	 		  Consistency, Isolation and Durability) property.
+	- In RDBMS, data values are stored in the form of tables, so a relationship between 	  these data values will be stored in the form of a table as well.
+	- RDBMS is designed to handle large amount of data. it supports multiple users.
+	- Example of RDBMS are mysql, postgre, sql server, oracle etc.
+
+-------------------------------------------------------------------------------------------
+4.What is MF Cod Rule of RDBMS Systems? 
+-->Dr Edgar F. Codd, after his extensive research on the Relational Model of database systems, came up with twelve rules of his own, which according to him, a database must obey in order to be regarded as a true relational database.
+
+-------------------------------------------------------------------------------------------
+5.What do you understand By Data Redundancy?
+-->Data redundancy means the occurrence of duplicate copies of similar data. It is done intentionally to keep the same piece of data at different places, or it occurs accidentally.
+
+-------------------------------------------------------------------------------------------
+6.What is DDL Interpreter?
+-->DDL Interpreter DDL expands to Data Definition Language. DDL Interpreter as the name suggests interprets the DDL statements such as schema definition statements like create, delete, etc.
+
+-------------------------------------------------------------------------------------------
+7.What is DML Compiler in SQL? 
+-->DML Compiler: Translates DML statements in a query language within low level instructions understandable through the query evaluation engine.
+
+------------------------------------------------------------------------------------------
+8.What is SQL Key Constraints writing an Example of SQL Key Constraints ?
+-->Key Constraints are the rules that we can apply on the type of data in a table. That is, we can specify the limit on the type of data that can be stored in a particular column in a table using constraints. 
+		
+	Exa:--	CREATE TABLE Student
+		(
+		ID int(6) NOT NULL PRIMARY KEY,
+		NAME varchar(10),
+		ADDRESS varchar(20)
+		);
+
+------------------------------------------------------------------------------------------
+9.What is save Point? How to create a save Point write a Query?
+-->A SAVEPOINT is a point in a transaction in which you can roll the transaction back to a certain point without rolling back the entire transaction.
+
+	Query: SAVEPOINT SAVEPOINT_NAME;
+
+------------------------------------------------------------------------------------------
+10.What is trigger and how to create a Trigger in SQL?
+-->A trigger is a stored procedure in a database that automatically invokes whenever a special event in the database occurs. For example, a trigger can be invoked when a row is inserted into a specified table or when specific table columns are updated.
+	
+EXA:-	create trigger [trigger_name] 
+
+	[before | after]  
+
+	{insert | update | delete}  
+
+	on [table_name]  
+
+	[for each row]  
+
+	[trigger_body] 
