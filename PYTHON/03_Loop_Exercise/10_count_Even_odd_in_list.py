@@ -1,3 +1,5 @@
+# Write a Python program to count the number of even and odd numbers in a series of numbers
+
 l = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]
 odd = 0
 even = 0
