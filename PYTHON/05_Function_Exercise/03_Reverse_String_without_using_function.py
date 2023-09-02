@@ -1,3 +1,5 @@
+# Write a Python program to reverse a string.
+
 def reverse(s):
 
     rev = ""
