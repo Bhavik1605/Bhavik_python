@@ -6,4 +6,4 @@ items = ["apple", "banana", "cherry", "date", "fig"]
 
 new = random.choice(items)
 
-print("Randomly selected item:", new)
+print("Randomly selected item :", new)
