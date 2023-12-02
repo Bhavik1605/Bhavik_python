@@ -1,8 +1,7 @@
 # Write a Python program to convert a list of characters into a string. 
 
+l = ['H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd']
 
-char_list = ['H', 'e', 'l', 'l', 'o', ',', ' ', 'W', 'o', 'r', 'l', 'd']
+res = ''.join(l)
 
-result_string = ''.join(char_list)
-
-print(result_string)
+print(res)
